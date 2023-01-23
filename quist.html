@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUIZ</title>
+<link rel="stylesheet" href="funcion.css">
+</head>
+<body>
+<header><h1>QUIZ HTML5</h1>
+    <p>Cuestionario</p>
+</header>
+    <div class="container">
+        <section id="p0">
+            <h3>1.- ¿Que significa HTML?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">programa de texto
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Hyper text langua
+            </label>            
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Hyper text Markup Language
+        </section>
+        <section id="p1">
+            <h3>2.- ¿Que es lo que más usa?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Enlaces
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Etiquetas
+            </label>            
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Realidad aumentada
+        </section>
+        <section id="p2">
+            <h3>3.- ¿Que permite el editor script?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Permite que el programa tenga acceso a camaras, gps, galerias, etc
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Brindar instrucciones a los navegadores para que procesar el lenguaje
+            </label>            
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Te dice que haces mal
+        </section>
+        <section id="p3">
+            <h3>4.- ¿Cuales son los scrips más conocidos?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">PHP y Javascript
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">c++ y kotlin
+            </label>            
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">css y c++
+        </section>
+        <section id="p4">
+            <h3>5.- ¿Cuales son las caracteristicas de CSS?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Texto
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Estructura
+            </label>            
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Estilo
+        </section>
+
+        <button onclick="corregir()">CORREGIR</button>
+        <h2>Numero de aciertos: <span id="resultado"></span></h2>
+
+
+    </div>
+<script src="fun.js"></script>
+</body>
+</html>
